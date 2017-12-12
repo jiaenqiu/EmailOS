@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.emailOS.mapper.UserMapper">
+    <select id="queryAllUsers" resultType="User">
+        select * from x_user order by user_id ASC
+    </select>
+
+    <select id="selectUserById" resultType="User" parameterType="java.lang.Integer">
+        select * from x_user where user_id=#{user_id}
+    </select>
+
+    <insert id="addUser" parameterType="com.web.emailOS.bean.User" useGeneratedKeys="true">
+        insert into x_user(user_name,user_pwd,user_phone,user_id_card,user_content)
+        values(#{user_name},#{user_pwd},#{user_phone},#{user_id_card},#{user_content})
+    </insert>
+
+    <delete id="delUserById" parameterType="java.lang.Integer">
+        delete from x_user where user_id=#{user_id}
+    </delete>
+
+    <update id="updateUser">
+        update
+        x_user set user_name=#{user_name},user_pwd=#{user_pwd},user_phone=#{user_phone},user_id_card=#{user_id_card},user_content=#{user_content}
+        where user_id=#{user_id}
+    </update>
+
+</mapper>

@@ -1,0 +1,221 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-size: 100% 100%;
+    position: absolute;
+    background: #fffcee;
+    filter: alpha(opacity:30);
+    opacity: 0.8;
+    /* 页面渐变色 */
+    /* background: -webkit-linear-gradient(bottom, #fba555, #ffed6c 75%);
+    background: -moz-linear-gradient(bottom, #fba555, #ffed6c 75%);
+    background: -ms-linear-gradient(bottom, #fba555, #33CCFF 75%);
+    background: -o-linear-gradient(bottom, #fba555, #ffed6c 75%);
+    background: linear-gradient(to top, #fba555, #33CCFF 75%);  */
+}
+
+body {
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+
+.header-bg {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.center-logo {
+    margin-left: -700px;
+    margin-top: -240px;
+}
+
+.foot {
+    text-align: center;
+    width: 100%;
+    /*  background:#d0d0d0; */
+}
+
+.btn-flat.small {
+    font-size: 11px;
+    padding: 5px 9px;
+}
+
+/* Custom Select */
+.ui-select {
+    width: 137px;
+    margin-left: 0px !important;
+    vertical-align: middle;
+    min-width: 100px;
+    height: 25px;
+    min-height: 25px !important;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    background: url("../img/select-bg.png"), -moz-linear-gradient(top, #ffffff 0%, #f0f1f2 100%);
+    background: url("../img/select-bg.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f0f1f2));
+    background: url("../img/select-bg.png"), -webkit-linear-gradient(top, #ffffff 0%, #f0f1f2 100%);
+    background: url("../img/select-bg.png"), -o-linear-gradient(top, #ffffff 0%, #f0f1f2 100%);
+    background: url("../img/select-bg.png"), -ms-linear-gradient(top, #ffffff 0%, #f0f1f2 100%);
+    background: url("../img/select-bg.png"), linear-gradient(to bottom, #ffffff 0%, #f0f1f2 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f0f1f2', GradientType=0);
+
+    display: inline-block;
+    border: 1px solid #cfdde8;
+    border-radius: 5px;
+
+    background-position: 94%;
+    background-repeat: no-repeat;
+}
+
+.ui-select select {
+    line-height: inherit;
+    width: 135%;
+    font-family: "Open Sans", Arial;
+    font-size: 12px;
+    border: none;
+    padding: 1px 30px 0px 7px;
+    height: 25px;
+    -webkit-appearance: none;
+    color: #737f8d;
+    text-shadow: 1px 1px 1px #fff;
+    background: transparent;
+}
+
+/* Dropdown with dialog */
+.ui-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.ui-dropdown .head {
+    color: #272727;
+    font-size: 13px;
+    position: relative;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    padding: 4px 46px 4px 12px;
+    text-shadow: 1px 1px 1px #fff;
+    box-shadow: 1px 1px 4px 0px #efefef;
+    cursor: pointer;
+
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f8f8f8 47%, #f4f4f4 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(47%, #f8f8f8), color-stop(100%, #f4f4f4)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f8f8f8 47%, #f4f4f4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #f8f8f8 47%, #f4f4f4 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%, #f8f8f8 47%, #f4f4f4 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f8f8 47%, #f4f4f4 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4f4f4', GradientType=0); /* IE6-9 */
+}
+
+.ui-dropdown .head:hover,
+.ui-dropdown .head.active {
+    background: #fefefe; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #FDFDFD 47%, #F1F1F1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(47%, #FDFDFD), color-stop(100%, #F1F1F1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #FDFDFD 47%, #F1F1F1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #FDFDFD 47%, #F1F1F1 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%, #FDFDFD 47%, #F1F1F1 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #FDFDFD 47%, #F1F1F1 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#F1F1F1', GradientType=0); /* IE6-9 */
+}
+
+.ui-dropdown .head:active,
+.ui-dropdown .head.active {
+    box-shadow: none;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.ui-dropdown .head i.arrow-down {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+}
+
+.ui-dropdown .dialog {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 42px;
+    z-index: 100;
+}
+
+.ui-dropdown .dialog.is-visible {
+    display: block;
+    -webkit-animation: reveal .2s ease-out;
+    -moz-animation: reveal .2s ease-out;
+    animation: reveal .2s ease-out;
+}
+
+.ui-dropdown .dialog .pointer {
+    position: relative;
+    top: -22px;
+}
+
+.ui-dropdown .dialog .pointer .arrow,
+.ui-dropdown .dialog .pointer .arrow_border {
+    border-color: transparent transparent #fff;
+    border-style: solid;
+    border-width: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    z-index: 1002;
+    right: 25px;
+}
+
+.ui-dropdown .dialog .pointer .arrow_border {
+    border-color: transparent transparent #a1a1a1;
+    border-width: 9px;
+    top: 4px;
+    z-index: 1001;
+    right: 24px;
+}
+
+.ui-dropdown .dialog .body {
+    width: 440px;
+    background-color: #fff;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px 0px rgb(214, 214, 214);
+    padding: 8px 10px 8px 10px;
+}
+
+.ui-dropdown .dialog .body p.title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.ui-dropdown .dialog .body .form {
+}
+
+.ui-dropdown .dialog .body .form select {
+    display: inline-block;
+    width: 120px;
+    vertical-align: top;
+    height: 27px;
+    margin-right: 2px;
+}
+
+.ui-dropdown .dialog .body .form input[type="text"] {
+    height: 17px;
+    width: 90px;
+    margin-right: 2px;
+}
+
+.ui-dropdown .dialog .body .form a {
+    vertical-align: top;
+}

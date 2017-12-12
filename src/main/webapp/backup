@@ -1,0 +1,22 @@
+<tr class="info">
+        <td>1</td>
+        <td>市级</td>
+        <td>贾恩秋</td>
+        <td>183-3253-7474</td>
+        <td>jiaenqiu@163.com</td>
+        <td>
+            <button type="button" id="emailJob" class="btn btn-primary btn-xs"
+                   data-toggle="modal" data-target="#emailModal">
+            <i class="glyphicon glyphicon-envelope"></i>通知
+            </button> <!-- <button type="button" class="btn btn-primary btn-xs" data-toggle="modal" data-target="#detailsModal">
+						<i class="glyphicon glyphicon-eye-open"></i></button> -->
+            <button type="button" class="btn btn-primary btn-xs"
+                    data-toggle="modal" data-target="#updateEmailModal">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-xs"
+                    data-toggle="modal" data-target="#deleteEmailModal">
+                <i class="glyphicon glyphicon-remove"></i>
+            </button>
+        </td>
+    </tr>

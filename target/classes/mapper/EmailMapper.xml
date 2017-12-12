@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.web.emailOS.mapper.EmailMapper">
+
+    <select id="queryAllEmails" resultType="com.web.emailOS.bean.Email">
+        select * from x_email order by email_id ASC
+    </select>
+
+    <select id="selectEmailById" resultType="com.web.emailOS.bean.Email" parameterType="java.lang.Integer">
+        select * from x_email where email_id=#{email_id}
+    </select>
+</mapper>
